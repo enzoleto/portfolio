@@ -138,7 +138,7 @@ export default function Home() {
                       degree: "BAC MENTION Bien",
                       institution: "Lycée Léonard de Vinci Melun",
                       period: "2019 - 2022",
-                      description: "options mMathématiques Physique-Chimie",
+                      description: "options Mathématiques Physique-Chimie",
                     },
                     {
                       degree: "BNSSA Nageur Sauveteur",
@@ -180,7 +180,7 @@ export default function Home() {
               <div className="space-y-6">
                 <h3 className="text-xl font-semibold">Contact Information</h3>
                 <p className="text-gray-400">
-                  free sex
+                  Follow me
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
