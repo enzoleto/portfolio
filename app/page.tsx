@@ -277,7 +277,7 @@ export default function Home() {
       <footer className="border-t border-green-500/20 bg-black py-8">
         <div className="container text-center">
           <div className="text-xl font-bold text-green-500">
-            <span className="text-white">Dev</span>Portfolio
+            <span className="text-white">Enzo </span>Létocart
           </div>
           <p className="mt-4 text-gray-400">© {new Date().getFullYear()} Enzo Létocart. Tout les droits me sont reservés</p>
           <p className="mt-2 text-sm text-gray-500">
