@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react"
 
 export function CodeRain() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const animationFrameId = useRef<number>()
+  const animationFrameId = useRef<number>(0)
 
   useEffect(() => {
     const canvas = canvasRef.current
