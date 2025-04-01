@@ -7,10 +7,10 @@ import {  Download } from "lucide-react"
   export default function Navbar () {
   return (
   
-  <header className="sticky top-0 z-15 border-b border-green-500/20 bg-black/80 backdrop-blur-sm">
+  <header className="sticky top-0 z-10 border-b border-green-500/20 bg-black/80 backdrop-blur-sm">
    <div className="container flex h-16 items-center justify-between">
      <div className="text-xl font-bold text-green-500">
-       <span className="text-white">Deveuhh</span>Portfolio
+       <span className="text-white">Dev</span>Portfolio
      </div>
      <nav className="hidden md:block">
        <ul className="flex space-x-8">

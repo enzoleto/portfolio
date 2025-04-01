@@ -50,15 +50,29 @@ export default function Projets() {
       <TabsContent value="languages" className="mt-8">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {[
-            { title: "Donjon Infini", description: "Projet de fnin d'année jeux de Donjon", tags: ["Java"] },
-            { title: "Dualboot", description: "Création d'un dualboot Linux/windows", tags: ["Bash"] },
-            { title: "Bataille Navale", description: "Jeux de Batille Navale en C sur le terminal", tags: ["C"] },
-            { title: "Jeux de dessin d'étoiles", description: "Jeux qui dessine des pyramides d'étoiles", tags: ["C", "Java"] },
-            { title: "Devinette de nombre", description: "Jeux de devinette d'un nombre entre 1 et 50", tags: ["C", "Java"] },
-            { title: "Portfolio", description: "Site Web de gestion de SPA avec une base de données", tags: ["Html", "Php", "Css", "Sql"] },
+            { title: "Donjon Infini", image: "/donjon.jpeg", description: "Projet de fnin d'année jeux de Donjon", tags: ["Java"] },
+            { title: "Dualboot", image: "/dual.png", description: "Création d'un dualboot Linux/windows", tags: ["Bash"] },
+            { title: "Bataille Navale",image: "/bataille.png", description: "Jeux de Batille Navale en C sur le terminal", tags: ["C"] },
+            { title: "Jeux de dessin d'étoiles",  image: "/placeholder.svg?height=200&width=400",description: "Jeux qui dessine des pyramides d'étoiles", tags: ["C", "Java"] },
+            { title: "Devinette de nombre", image: "/placeholder.svg?height=200&width=400", description: "Jeux de devinette d'un nombre entre 1 et 50", tags: ["C", "Java"] },
+            { title: "Site Spa",image: "/spa.jpg", description: "Site Web de gestion de SPA avec une base de données", tags: ["Html", "Php", "Css", "Sql"] },
           ].map((skill, index) => (
             <AnimatedCard delay={index * 0.1} key={index}>
               <Card className="overflow-hidden bg-black border-green-500/20">
+              {skill.image && (
+    <div className="relative w-full h-40">
+      <Image 
+        src={skill.image} 
+        alt={skill.title} 
+        layout="fill" 
+        objectFit="cover" 
+        className="rounded-t-lg"
+      />
+    </div>
+  )}
+
+
+              
                 <CardHeader>
                   <CardTitle className="text-xl">{skill.title}</CardTitle>
                   <CardDescription className="text-gray-400">{skill.description}</CardDescription>
@@ -92,15 +106,26 @@ export default function Projets() {
       <TabsContent value="tools" className="mt-8">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {[
-            { title: "LexiQuest", description: "Jeux de Mot en solo et en ligne", tags: ["Version Control", "GitHub", "Collaboration"] },
-            { title: "Bankrous", description: "Système d'exploitation open-source utilisé pour le développement et les serveurs.", tags: ["Shell", "Bash", "Administration"] },
-            { title: "Train", description: "Éditeur de code populaire avec une large gamme d'extensions.", tags: ["IDE", "Extensions", "Customizable"] },
-            { title: "Docker", description: "Outil de conteneurisation permettant de créer des environnements reproductibles.", tags: ["Containers", "DevOps", "CI/CD"] },
-            { title: "Docker", description: "Outil de conteneurisation permettant de créer des environnements reproductibles.", tags: ["Containers", "DevOps", "CI/CD"] },
-            { title: "Docker", description: "Outil de conteneurisation permettant de créer des environnements reproductibles.", tags: ["Containers", "DevOps", "CI/CD"] },
+            { title: "LexiQuest", image: "/placeholder.svg?height=200&width=400", description: "Jeux de Mot en solo et en ligne", tags: ["C", "Java/mobile", "React"] },
+            { title: "Bankrous", image: "/bank.png", description: "Site de banque en ligne", tags: ["Html", "Css", "Php"] },
+            { title: "Train",   image: "/placeholder.svg?height=200&width=400", description: "Site de réservation de train", tags: ["Html", "Css", "Php"] },
+           
           ].map((skill, index) => (
             <AnimatedCard delay={index * 0.1} key={index}>
               <Card className="overflow-hidden bg-black border-green-500/20">
+
+
+              {skill.image && (
+    <div className="relative w-full h-40">
+      <Image 
+        src={skill.image} 
+        alt={skill.title} 
+        layout="fill" 
+        objectFit="cover" 
+        className="rounded-t-lg"
+      />
+    </div>
+  )}
                 <CardHeader>
                   <CardTitle className="text-xl">{skill.title}</CardTitle>
                   <CardDescription className="text-gray-400">{skill.description}</CardDescription>
@@ -114,6 +139,14 @@ export default function Projets() {
                     ))}
                   </div>
                 </CardContent>
+                <CardFooter className="border-t border-green-500/10 bg-zinc-950">
+                      <div className="flex w-full justify-between">
+                        <Button variant="ghost" className="text-green-500 hover:bg-green-500/10 hover:text-green-400">
+                          <Github className="mr-2 h-4 w-4" /> Code
+                        </Button>
+                    
+                      </div>
+                    </CardFooter>
               </Card>
             </AnimatedCard>
           ))}
@@ -123,16 +156,15 @@ export default function Projets() {
       <TabsContent value="testing" className="mt-8">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {[
-            { title: "Jest",
-              image: "/image.png",
-              description: "Framework de test JavaScript pour les applications frontend et backend.",
+            { title: "Eiffel Time",
+              image: "/Group.png",
+              description: "Application complète de l'université",
                tags: ["Unit Testing", "Snapshots", "Mocking"] 
               },
-            { title: "Cypress", description: "Outil de test end-to-end pour le développement web moderne.", tags: ["E2E", "Automation", "Web Testing"] },
-            { title: "Selenium", description: "Framework de test utilisé pour automatiser les tests des navigateurs.", tags: ["Automation", "UI Testing", "WebDriver"] },
-            { title: "Postman", description: "Outil de test et d'automatisation des API REST.", tags: ["API Testing", "Automation", "Mock Server"] },
-            { title: "SQL", description: "Langage de gestion de bases de données relationnelles.", tags: ["PostgreSQL", "MySQL", "Queries"] },
-            { title: "SQL", description: "Langage de gestion de bases de données relationnelles.", tags: ["PostgreSQL", "MySQL", "Queries"] },
+            { title: "Jeux de boules",  image: "/placeholder.svg?height=200&width=400",description: "Optimisation d'un jeux de première année", tags: ["React/Native", "Express", "Prisma", "Postgresql"] },
+            { title: "Codec compétences", image: "/placeholder.svg?height=200&width=400", description: "Tp image différentiel", tags: ["Pyhton"] },
+            { title: "Bankrous version anomalie", image: "/bank.png", description: "Correction d'anomalie", tags: ["Html", "Css", "Php"] },
+
           ].map((skill, index) => (
             <AnimatedCard delay={index * 0.1} key={index}>
               <Card className="overflow-hidden bg-black border-green-500/20">
@@ -160,6 +192,14 @@ export default function Projets() {
                     ))}
                   </div>
                 </CardContent>
+                <CardFooter className="border-t border-green-500/10 bg-zinc-950">
+                      <div className="flex w-full justify-between">
+                        <Button variant="ghost" className="text-green-500 hover:bg-green-500/10 hover:text-green-400">
+                          <Github className="mr-2 h-4 w-4" /> Code
+                        </Button>
+                    
+                      </div>
+                    </CardFooter>
               </Card>
             </AnimatedCard>
           ))}
