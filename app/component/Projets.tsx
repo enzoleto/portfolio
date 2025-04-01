@@ -50,7 +50,7 @@ export default function Projets() {
       <TabsContent value="languages" className="mt-8">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {[
-            { title: "Donjon Infini", image: "/donjon.jpeg", description: "Projet de fnin d'année jeux de Donjon", tags: ["Java"] },
+            { title: "Donjon Infini", image: "/donjon.jpeg", description: "Projet de fin d'année jeux de Donjon", tags: ["Java"] },
             { title: "Dualboot", image: "/dual.png", description: "Création d'un dualboot Linux/windows", tags: ["Bash"] },
             { title: "Bataille Navale",image: "/bataille.png", description: "Jeux de Batille Navale en C sur le terminal", tags: ["C"] },
             { title: "Jeux de dessin d'étoiles",  image: "/placeholder.svg?height=200&width=400",description: "Jeux qui dessine des pyramides d'étoiles", tags: ["C", "Java"] },
