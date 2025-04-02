@@ -123,10 +123,10 @@ export default function Home() {
           <div className="container">
             <AnimatedSectionHeader title="Education &" highlight="Certifications" />
 
-            <div className="mt-12 grid gap-8 md:grid-cols-2">
+            <div className="mt-12 grid md:grid-cols-2">
               <div className="space-y-8">
-                <h3 className="text-xl font-semibold">Mes Diplômes</h3>
-                <div className="space-y-6">
+                <h3 className="text-xl justify-center font-semibold">Mes Diplômes</h3>
+                <div className="space-y-6 ">
                   {[
                     {
                       degree: "BUT INFORMATIQUE",

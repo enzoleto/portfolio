@@ -28,7 +28,7 @@ return (
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
     >
-      Etudiant Informatique & Developper
+      Etudiant Informatique & Développeur
     </motion.div>
     <motion.h1
       className="text-4xl font-bold leading-tight md:text-6xl"

@@ -14,7 +14,7 @@ import {  Download } from "lucide-react"
      </div>
      <nav className="hidden md:block">
        <ul className="flex space-x-8">
-         {["Home", "A propos", "Skills", "Projects", "Education", "Contact"].map((item) => (
+         {["Home", "about", "Skills", "Projets", "Education", "Contact"].map((item) => (
            <li key={item}>
              <Link
                href={`#${item.toLowerCase()}`}
